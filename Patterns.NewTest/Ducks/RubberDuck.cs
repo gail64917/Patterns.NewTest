@@ -1,4 +1,4 @@
-﻿using Patterns.NewTest.QuackExamples;
+﻿using Patterns.NewTest.FlyExamples;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 
 namespace Patterns.NewTest.Ducks
 {
-    class ExoticDuck : DuckBase
+    class RubberDuck : DuckBase
     {
-        public ExoticDuck()
+        public RubberDuck()
         {
-            quackBehaviour = new ExoticQuack();
+            flyBehaviour = new NoFly();
         }
 
         public override void Display()
         {
-            Console.WriteLine("Hello! I`m a EXOTIC duck.");
+            Console.WriteLine("I`m rubber duck!");
         }
     }
 }
